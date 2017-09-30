@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>SlingshotDemo</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <!-- servlet -->
+  <servlet>
+    <servlet-name>CustomerServlet</servlet-name>
+    <servlet-class>com.slingshotdemo.akbari.CustomerServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CustomerServlet</servlet-name>
+    <url-pattern>/CustomerServlet</url-pattern>
+  </servlet-mapping>
+  
+  <!-- set session timeout to 1 minute. default is 30 minutes -->
+  <session-config>
+   <session-timeout>1</session-timeout>
+  </session-config>
+  
+  <filter>
+  	<filter-name>JspFilter</filter-name>
+   <filter-class>com.slingshotdemo.akbari.JspFilter</filter-class>
+   <init-param>
+      <param-name>init-param</param-name>
+      <param-value>Initialization the JspFilter...</param-value>
+   </init-param>   
+  </filter>
+  <filter-mapping>
+   <filter-name>JspFilter</filter-name>
+   <url-pattern>/addCustomer.jsp</url-pattern>
+   <url-pattern>/deleteCustomer.jsp</url-pattern> 
+   <url-pattern>/manageCustomers.jsp</url-pattern>
+   <url-pattern>/search.jsp</url-pattern>
+   <url-pattern>/UpdateCustomer.jsp</url-pattern>
+   <url-pattern>/CustomerServlet</url-pattern>
+   <url-pattern>/dberror.jsp</url-pattern>
+   <url-pattern>/logout.jsp</url-pattern>
+   
+  </filter-mapping>
+</web-app>

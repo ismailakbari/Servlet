@@ -1,0 +1,175 @@
+@CHARSET "ISO-8859-1";
+
+
+/*------------index.jsp--------------*/
+#indexDiv0{
+	
+	position: relative;
+	left: 15%;
+    top: 150px;
+    //right: 0;
+    width: 1000px;
+    height: 30px;
+	background-color: #c0c0c0 ;
+    text-align: center;
+	
+}
+#indexDiv1{
+	
+	position: relative;
+	left: 15%;
+    top: 150px;
+    //right: 0;
+    width: 1000px;
+    height: 300px;   
+   // height: 100px;
+	background-color: #FBC417
+    
+	
+}
+#indexDiv1 img{
+	
+	position: relative;
+	
+    top: 50px;
+    left: 40%;
+   
+}
+#indexDiv1 p{
+	
+	position: relative;
+	left: 35%;
+    top: 100px;
+   
+}
+/*------------login.jsp--------------*/
+#errorMessage{
+	color: red;
+}
+#loginMessage{
+	color: red;
+}
+
+#tableLogin {
+	border="0" ;
+	cellpadding="5" ;
+	cellspacing="2" ;
+	background-color: orange;
+	/*position: absolute;
+    top: 50%;
+    left: 50%; */
+    
+}
+.fieldBackground {
+	background-color: #ffe7e1;
+	
+}
+#topCenter{
+	position: relative;
+	
+    top: 150px;
+    //right: 0;
+   // width: 200px;
+   // height: 100px;
+   // border: 3px solid #73AD21;
+	
+}
+
+/*customer management */
+#cmMain{
+	position: relative;
+	background-color: #F1F1F1;
+    top: 150px;
+    
+    //right: 0;
+    //left:50%;
+    width: 100%;
+    //height: 500px;
+   // border: 3px solid #73AD21;
+	
+}
+
+#customerSearch{
+	position: relative;
+	
+    //top: 0px;
+    //right: 0;
+    left : 30%;
+   width: 400px;
+   height: 150px;
+   // border: 3px solid #73AD21;
+	
+}
+#searchTable  input{
+	//position: relative;
+	
+    //top: 150px;
+    //right: 0;
+    // left : 50%;
+   // width: 200px;
+   height: 30px;
+   // border: 3px solid #73AD21;
+	
+}
+#customerSearchResult{
+	position: relative;
+	
+    //top: 150px;
+    //right: 0;
+    // left : 50%;
+   // width: 200px;
+   // height: 100px;
+   // border: 3px solid #73AD21;
+	
+}
+
+#logout {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    width: 100px;
+    height: 40px;
+    //border: 3px solid #73AD21;
+    //background-color: fuchsia;
+}
+
+
+/* search result (search.jsp)  */
+#tableResult {
+	position: relative;
+	top: 200px;
+	border: 3px solid black;
+	cellpadding="5px" ;
+	cellspacing="2px" ;
+	//background-color: orange;
+	/*position: absolute;
+    top: 50%;
+    left: 50%; */
+    
+}	
+#tableResult .head{
+	
+	background-color: orange;
+	
+}		
+#tableResult tr{
+	
+	background-color: #f1f1f1;
+	
+}		
+
+
+#searchCenterTop{
+	position: relative;
+	background-color: #408080;
+    top: 150px;
+    //right: 0;
+    left:40%;
+    width: 300px;
+    height: 40px;
+    padding-top: 20px;
+   //border: 3px solid #73AD21;
+	
+}		
+		
+		
